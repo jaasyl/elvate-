@@ -20,7 +20,13 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div id="loader" class="loader"><div class="loader-inner"><div class="loader-bar"></div><span class="loader-text">ELAVATE</span></div></div>
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <img src="images/elavate-logo.png" alt="Elavate Logo" class="loader-logo logo-img">
+            <div class="loader-bar"></div>
+           
+        </div>
+    </div>
     <div class="page-transition" id="page-transition"></div>
     <div id="mouse-glow" class="mouse-glow"></div>
     <div id="scroll-progress" class="scroll-progress"></div>
@@ -47,8 +53,8 @@
 
         <section class="page-hero">
             <div class="container">
-                <h1 class="page-hero-title">Selected <span class="gradient-text">Work</span></h1>
-                <p class="page-hero-description">A curated portfolio of projects that demonstrate quality design and measurable results</p>
+                <h1 class="page-hero-title">Featured <span class="gradient-text">Shopify Projects</span></h1>
+                <p class="page-hero-description">A selection of live Shopify stores I&apos;ve designed, customized, and optimized for growing brands.</p>
             </div>
         </section>
 
@@ -58,91 +64,77 @@
                 <div class="project-filters" data-reveal>
                     <button class="filter-btn active" data-filter="all">All Projects</button>
                     <button class="filter-btn" data-filter="shopify">Shopify</button>
-                    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
-                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
                 </div>
 
-                <!-- Project 1 -->
-                <div class="portfolio-project portfolio-project-large" data-reveal data-category="shopify">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
+                <div class="project-showcase" id="project-bhold" data-reveal data-category="shopify">
+                    <div class="project-showcase-visual">
+                        <div class="project-mockup">
+                            <div class="project-mockup-bar">
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-url">bhold.in</span>
+                            </div>
+                            <img src="images/bhold-screenshot.gif" alt="Bhold Shopify website homepage screenshot" class="project-mockup-image">
+                        </div>
                     </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Shopify Ecommerce</span><span class="portfolio-project-year">2026</span></div>
-                        <h3 class="portfolio-project-title">Premium Fashion Store</h3>
-                        <p class="portfolio-project-description">Complete Shopify ecommerce solution with custom theme, payment integration, and inventory management system. Increased online sales by 180% within the first quarter.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">Shopify</span><span class="portfolio-tag">Liquid</span><span class="portfolio-tag">Custom Theme</span><span class="portfolio-tag">Payment Integration</span></div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="portfolio-project" data-reveal data-category="portfolio">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
-                    </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Portfolio Website</span><span class="portfolio-project-year">2026</span></div>
-                        <h3 class="portfolio-project-title">Creative Agency</h3>
-                        <p class="portfolio-project-description">Modern portfolio website with custom animations, responsive design, and CMS integration. Achieved a 98 performance score on Lighthouse.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">HTML/CSS/JS</span><span class="portfolio-tag">Animations</span><span class="portfolio-tag">CMS</span></div>
+                    <div class="project-showcase-content">
+                        <span class="project-badge">Shopify Ecommerce</span>
+                        <h3 class="content-title">Bhold</h3>
+                        <p class="project-copy">Developed and customized a premium Shopify ecommerce store with a strong focus on modern UI, responsive layouts, performance optimization, and a seamless shopping experience. The project includes theme customization, product presentation, and conversion-focused design.</p>
+                        <div class="project-tags"><span class="portfolio-tag">Shopify</span><span class="portfolio-tag">Liquid</span><span class="portfolio-tag">HTML</span><span class="portfolio-tag">CSS</span><span class="portfolio-tag">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://bhold.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span class="btn-ripple"></span>Visit Website</a>
+                            <a href="https://bhold.in/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><span class="btn-ripple"></span>View Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="portfolio-project" data-reveal data-category="landing">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
+                <div class="project-showcase reverse" id="project-zolv" data-reveal data-category="shopify">
+                    <div class="project-showcase-visual">
+                        <div class="project-mockup">
+                            <div class="project-mockup-bar">
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-url">zolvstore.com</span>
+                            </div>
+                            <img src="images/zolv-screenshot.gif" alt="Zolv Store Shopify website homepage screenshot" class="project-mockup-image">
+                        </div>
                     </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Landing Page</span><span class="portfolio-project-year">2025</span></div>
-                        <h3 class="portfolio-project-title">SaaS Product Launch</h3>
-                        <p class="portfolio-project-description">High-converting landing page with A/B testing, analytics integration, and email capture. Achieved 4.2% conversion rate.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">Landing Page</span><span class="portfolio-tag">Conversion Optimization</span><span class="portfolio-tag">Analytics</span></div>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="portfolio-project" data-reveal data-category="shopify">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
-                    </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Shopify Ecommerce</span><span class="portfolio-project-year">2025</span></div>
-                        <h3 class="portfolio-project-title">Tech Startup Store</h3>
-                        <p class="portfolio-project-description">Custom Shopify theme with product configurator and subscription model. Increased average order value by 45%.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">Shopify</span><span class="portfolio-tag">Subscription Model</span><span class="portfolio-tag">Custom App</span></div>
+                    <div class="project-showcase-content">
+                        <span class="project-badge">Shopify Ecommerce</span>
+                        <h3 class="content-title">Zolv Store</h3>
+                        <p class="project-copy">Designed and customized a modern Shopify ecommerce experience focused on clean design, intuitive navigation, mobile responsiveness, and an optimized customer journey for online shopping.</p>
+                        <div class="project-tags"><span class="portfolio-tag">Shopify</span><span class="portfolio-tag">Liquid</span><span class="portfolio-tag">HTML</span><span class="portfolio-tag">CSS</span><span class="portfolio-tag">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://zolvstore.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span class="btn-ripple"></span>Visit Website</a>
+                            <a href="https://zolvstore.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><span class="btn-ripple"></span>View Details</a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="portfolio-project" data-reveal data-category="portfolio">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
+                <div class="project-showcase" id="project-yzey" data-reveal data-category="shopify">
+                    <div class="project-showcase-visual">
+                        <div class="project-mockup">
+                            <div class="project-mockup-bar">
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-dot"></span>
+                                <span class="project-mockup-url">yzey.in</span>
+                            </div>
+                            <img src="images/yzey-screenshot.gif" alt="Yzey Shopify website homepage screenshot" class="project-mockup-image">
+                        </div>
                     </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Portfolio Website</span><span class="portfolio-project-year">2025</span></div>
-                        <h3 class="portfolio-project-title">Architecture Studio</h3>
-                        <p class="portfolio-project-description">Minimal portfolio with project galleries, team section, and contact integration. Featured on Awwwards.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">Portfolio</span><span class="portfolio-tag">Minimal Design</span><span class="portfolio-tag">Awwwards</span></div>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="portfolio-project" data-reveal data-category="landing">
-                    <div class="portfolio-project-image">
-                        <div class="portfolio-placeholder"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#2296FF" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
-                        <div class="portfolio-overlay"><a href="#" class="portfolio-btn">View Case Study</a><a href="#" class="portfolio-btn portfolio-btn-outline">Live Site</a></div>
-                    </div>
-                    <div class="portfolio-project-info">
-                        <div class="portfolio-project-meta"><span class="portfolio-project-type">Landing Page</span><span class="portfolio-project-year">2025</span></div>
-                        <h3 class="portfolio-project-title">Fitness App Launch</h3>
-                        <p class="portfolio-project-description">App landing page with countdown timer, feature highlights, and App Store integration. Generated 5,000+ downloads in first week.</p>
-                        <div class="portfolio-project-tags"><span class="portfolio-tag">Landing Page</span><span class="portfolio-tag">App Marketing</span><span class="portfolio-tag">Mobile First</span></div>
+                    <div class="project-showcase-content">
+                        <span class="project-badge">Shopify Ecommerce</span>
+                        <h3 class="content-title">Yzey</h3>
+                        <p class="project-copy">Built and customized a Shopify store with a premium shopping experience, responsive layouts, optimized product pages, and a user-friendly interface that aligns with the brand identity.</p>
+                        <div class="project-tags"><span class="portfolio-tag">Shopify</span><span class="portfolio-tag">Liquid</span><span class="portfolio-tag">HTML</span><span class="portfolio-tag">CSS</span><span class="portfolio-tag">JavaScript</span></div>
+                        <div class="project-actions">
+                            <a href="https://yzey.in/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><span class="btn-ripple"></span>Visit Website</a>
+                            <a href="https://yzey.in/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><span class="btn-ripple"></span>View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
