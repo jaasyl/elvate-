@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (counterAnimated) return;
 
         const aboutSection = document.getElementById('about');
+        if (!aboutSection || counters.length === 0) return;
         const rect = aboutSection.getBoundingClientRect();
 
         if (rect.top < window.innerHeight && rect.bottom > 0) {
@@ -323,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ----------------------------------------- */
     const contactForm = document.getElementById('contact-form');
 
-    contactForm.addEventListener('submit', (e) => {
+    if (contactForm) contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const name = document.getElementById('name').value;
